@@ -1,0 +1,19 @@
+nav{
+    background-color: #03045e;
+}
+.sidenav-trigger{
+    cursor: pointer;
+}
+.hamburger-icon{
+    padding: 0px 8px;
+    font-size: 28px !important;
+}
+.brand-logo{
+    padding-left: 15px !important;
+}
+
+@media only screen and (min-width: 1024px){
+    .main-header{
+        padding: 0px 40px;
+    }
+}
