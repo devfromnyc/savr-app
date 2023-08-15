@@ -1,0 +1,15 @@
+.hero-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px 0px;
+   }
+   
+   @media only screen and (max-width: 767px){
+       .hero-main{
+           padding-top: 20px;
+           padding-bottom: 0px;
+       }
+   }
