@@ -1,0 +1,21 @@
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]){
+    border-bottom: 1px solid #03045e;
+    -webkit-box-shadow: 0 1px 0 0 #03045e;
+    box-shadow: 0 1px 0 0 #03045e;
+}
+
+.basic-form{
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 20px;
+    width: 40%;
+    -webkit-box-shadow: -2px 6px 30px 8px #efefef;
+    box-shadow: -2px 6px 30px 8px #efefef;
+}
+
+@media only screen and (max-width: 767px){
+    .basic-form{
+        width: 90%;
+        padding: 20px;
+    }
+}
