@@ -14,6 +14,8 @@ import Footer from './shared/components/Navigation/Footer';
 
 import { AuthContext } from '../src/shared/context/auth-context';
 
+require("dotenv").config();
+
 const App = () => {
 
   const [isLoggedIn, setIsLoggedIn] = useState(false);
