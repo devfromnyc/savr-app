@@ -1,0 +1,24 @@
+.avatar-collection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.secondary-content-edit{
+    right: 48px !important;
+}
+.secondary-content-edit .material-icons, .secondary-content-delete .material-icons{
+    color: #03045e;
+    font-size: 22px !important;
+}
+.material-icons.circle{
+    background-color: #48cae4 !important;
+    color: #03045e !important;
+}
+.material-icons{
+    font-size: 20px !important;
+}
