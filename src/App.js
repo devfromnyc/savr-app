@@ -12,6 +12,8 @@ import AddModal from './shared/components/Forms/AddModal';
 import EditModal from './shared/components/Forms/EditModal';
 import Footer from './shared/components/Navigation/Footer';
 
+// import { cookieFind } from './shared/hooks/cookie-hook';
+
 import { AuthContext } from '../src/shared/context/auth-context';
 
 const App = () => {
@@ -20,10 +22,15 @@ const App = () => {
 
   const [userId, setUserId] = useState(false);
 
+  // const [userCookie, setUserCookie] = useState(false);
+
   const login = useCallback((uid) => {
     setIsLoggedIn(true);
     setUserId(uid);
+    // setUserCookie(true);
   }, []);
+
+  // const hasCookie = cookieFind();
 
   let displayContent;
 
@@ -59,7 +66,7 @@ const App = () => {
   }
   return (
       <AuthContext.Provider
-        value={{ isLoggedIn: isLoggedIn, userId: userId, login: login}}
+        value={{ isLoggedIn: isLoggedIn, userId: userId, login: login }}
       >
         <Router>
           {displayContent}

@@ -12,6 +12,8 @@ import { useForm } from '../../../shared/hooks/form-hook';
 import Input from './Inputs/Input';
 import Button from '../UserInterface/Button';
 
+// import { cookieCreate } from '../../hooks/cookie-hook';
+
 import './Form.css';
 
 const LoginForm = () =>{
@@ -52,6 +54,7 @@ const LoginForm = () =>{
 
             if (response.ok){
                 auth.login(responseData.user.id);
+                // cookieCreate(responseData.user.id);
             }
 
         } catch (err){
