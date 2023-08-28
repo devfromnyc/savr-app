@@ -69,6 +69,19 @@ const EditItemForm = () =>{
 
             const responseData = await response.json();
 
+            if (response.ok){
+                const itemContainer = document.getElementById(`${editFormId}`);
+                const itemTitle = itemContainer.querySelector('#item-title');
+                const itemPrice = itemContainer.querySelector('#item-cost');
+                const itemCategory = itemContainer.querySelector('#item-category');
+                const itemDate = itemContainer.querySelector('#item-date');
+
+                itemTitle.innerHTML = formState.inputs.editTitle.value;
+                itemPrice.innerHTML = formState.inputs.editCost.value;
+                itemCategory.innerHTML = formState.inputs.editCategory.value;
+                itemDate.innerHTML = formState.inputs.editDate.value;
+            }
+
             console.log(responseData);
 
         } catch (err){

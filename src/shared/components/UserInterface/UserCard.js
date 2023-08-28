@@ -46,9 +46,9 @@ const UserCard = props => {
     return(
         <li className="collection-item avatar" id={`item-container__${props.itemServerId}`}>
             <i className="material-icons circle red">attach_money</i>
-            <span className="title" id={props.itemTitle}>{props.itemTitle}</span>
-            <p><span id={props.itemCategory}>{props.itemCategory}</span> <span id={props.itemCost}>${props.itemCost}</span><br/>
-                <span id={props.itemDate}>{props.itemDate}</span> <br />
+            <span className="title" id="item-title" data-item-title={props.itemTitle}>{props.itemTitle}</span>
+            <p><span id="item-category" data-item-category={props.itemCategory}>{props.itemCategory}</span> <span id="item-cost" data-item-cost={props.itemCost}>${props.itemCost}</span><br/>
+                <span id="item-date" data-item-date={props.itemDate}>{props.itemDate}</span> <br />
             </p>
             <a href="#modal2" className="secondary-content secondary-content-edit modal-trigger" onClick={(e) => editItem(e)}><i className="material-icons">edit</i></a>
             <a href="#!" className="secondary-content secondary-content-delete" onClick={(e) => deleteItem(e)}><i className="material-icons">clear</i></a>
