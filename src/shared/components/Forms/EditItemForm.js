@@ -74,8 +74,6 @@ const EditItemForm = () =>{
         } catch (err){
             console.log(err);
         }
-
-        alert("YOU'VE SUCCESSFULLY EDITED AN ITEM");
     };
 
 

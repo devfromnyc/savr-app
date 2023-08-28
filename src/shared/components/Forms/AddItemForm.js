@@ -13,7 +13,7 @@ import Button from '../UserInterface/Button';
 
 import './Form.css';
 
-const AddItemForm = () =>{
+const AddItemForm = () => {
 
     const auth = useContext(AuthContext);
 
@@ -68,8 +68,6 @@ const AddItemForm = () =>{
         } catch (err){
             console.log(err);
         }
-
-        alert("YOU'VE SUCCESSFULLY ADDED AN ITEM");
     };
 
     return(
